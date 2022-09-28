@@ -2,6 +2,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
+import 'package:medic/signup.dart';
 
 import 'constants.dart';
 
@@ -108,9 +109,14 @@ class _WelcomeState extends State<Welcome> {
                     'Don\'t have an account? ',
                     style: kText3,
                   ),
-                  Text(
-                    'Sign up',
-                    style: kText2,
+                  GestureDetector(
+                    onTap: (){
+                      Navigator.pushReplacement(context, MaterialPageRoute(builder: (context)=>SignUp()));
+                    },
+                    child: Text(
+                      'Sign up',
+                      style: kText2,
+                    ),
                   )
                 ],
               )
