@@ -39,3 +39,11 @@ const kText4 = TextStyle(
     fontSize: 18,
     fontStyle: FontStyle.normal
 );
+
+const kText5 = TextStyle(
+    fontFamily: 'HindGuntur',
+    fontWeight: FontWeight.w500,
+    color: Color(0xff392cfe),
+    fontSize: 20,
+    fontStyle: FontStyle.normal
+);

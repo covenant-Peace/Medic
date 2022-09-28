@@ -2,6 +2,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
+import 'package:medic/homesceen.dart';
 import 'package:medic/signup.dart';
 
 import 'constants.dart';
@@ -85,7 +86,7 @@ class _WelcomeState extends State<Welcome> {
               ),
               GestureDetector(
                 onTap: () {
-                  // Navigator.pushReplacement(context, MaterialPageRoute(builder: (context)=>Welcome()));
+                  Navigator.pushReplacement(context, MaterialPageRoute(builder: (context)=>HomeScreen()));
                 },
                 child: Container(
                   margin: EdgeInsets.only(
