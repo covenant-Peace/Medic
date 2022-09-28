@@ -2,7 +2,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:medic/welcome.dart';
+import 'package:medic/login.dart';
 
 import 'constants.dart';
 
