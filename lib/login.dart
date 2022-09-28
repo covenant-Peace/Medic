@@ -50,6 +50,7 @@ class _WelcomeState extends State<Welcome> {
               //   height: getH(44),
               // ),
               Container(
+                height: getH(50),
                 margin: EdgeInsets.only(
                     left: getw(25), right: getw(27), top: getH(44)),
                 decoration: BoxDecoration(
@@ -65,6 +66,7 @@ class _WelcomeState extends State<Welcome> {
                 ),
               ),
               Container(
+                height: getH(50),
                 margin: EdgeInsets.only(
                     left: getw(25), right: getw(27), top: getH(26)),
                 decoration: BoxDecoration(
