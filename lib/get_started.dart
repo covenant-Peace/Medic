@@ -10,7 +10,9 @@ class GetStarted extends StatelessWidget {
       backgroundColor: Colors.white,
       body: Stack(
         children: [
-          Column(),
+          Column(
+            children: [],
+          ),
           SvgPicture.asset('images/circle.svg')
         ],
       ),
