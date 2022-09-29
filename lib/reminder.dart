@@ -61,10 +61,9 @@ class _ReminderState extends State<Reminder> {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   mainAxisAlignment: MainAxisAlignment.start,
                   children: [
-                    Container(
-                      width: getw(40),
-                      child: Transform.translate(
-                        offset: Offset(-20, 0),
+                    Expanded(
+                      child: Container(
+                        width: getw(20),
                         child: CheckboxListTile(
                           value: _value,
                           onChanged: (bool? value) {
@@ -86,51 +85,45 @@ class _ReminderState extends State<Reminder> {
                       ),
                     ),
                     Expanded(
-                      child: Transform.translate(
-                        offset: Offset(-50, 0),
-                        child: CheckboxListTile(
-                          value: _value,
-                          onChanged: (bool? value) {
-                            setState(() {
-                              _value = value!;
-                            });
-                          },
-                          title: Text(
-                            'Medications',
-                            style: kText8,
-                            // maxLines: 1,
-                          ),
-                          checkColor: Colors.black,
-                          activeColor: Colors.white,
-                          contentPadding: EdgeInsets.all(0),
-                          side: BorderSide(color: Colors.black),
-                          controlAffinity: ListTileControlAffinity.leading,
-                          // tristate: true,
+                      child: CheckboxListTile(
+                        value: _value,
+                        onChanged: (bool? value) {
+                          setState(() {
+                            _value = value!;
+                          });
+                        },
+                        title: Text(
+                          'Medications',
+                          style: kText8,
+                          // maxLines: 1,
                         ),
+                        checkColor: Colors.black,
+                        activeColor: Colors.white,
+                        contentPadding: EdgeInsets.all(0),
+                        side: BorderSide(color: Colors.black),
+                        controlAffinity: ListTileControlAffinity.leading,
+                        // tristate: true,
                       ),
                     ),
                     Expanded(
-                      child: Transform.translate(
-                        offset: Offset(-20, 0),
-                        child: CheckboxListTile(
-                          value: _value,
-                          onChanged: (bool? value) {
-                            setState(() {
-                              _value = value!;
-                            });
-                          },
-                          title: Text(
-                            'Appointments',
-                            style: kText9,
-                            // maxLines: 1,
-                          ),
-                          checkColor: Colors.black,
-                          activeColor: Colors.white,
-                          side: BorderSide(color: Colors.black),
-                          contentPadding: EdgeInsets.all(0),
-                          controlAffinity: ListTileControlAffinity.leading,
-                          // tristate: true,
+                      child: CheckboxListTile(
+                        value: _value,
+                        onChanged: (bool? value) {
+                          setState(() {
+                            _value = value!;
+                          });
+                        },
+                        title: Text(
+                          'Appointments',
+                          style: kText9,
+                          // maxLines: 1,
                         ),
+                        checkColor: Colors.black,
+                        activeColor: Colors.white,
+                        side: BorderSide(color: Colors.black),
+                        contentPadding: EdgeInsets.all(0),
+                        controlAffinity: ListTileControlAffinity.leading,
+                        // tristate: true,
                       ),
                     ),
                   ],
