@@ -143,7 +143,7 @@ class _SignUpState extends State<SignUp> {
                   decoration: BoxDecoration(color: Color(0xff392cfe)),
                   child: Center(
                     child: Text(
-                      'Login',
+                      'Sign up',
                       style: kText,
                     ),
                   ),

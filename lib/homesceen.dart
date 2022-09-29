@@ -53,7 +53,117 @@ class _HomeScreenState extends State<HomeScreen> {
               ),
               SizedBox(
                 height: getH(10),
-              )
+              ),
+              Padding(
+                padding: EdgeInsets.only(left: getw(37), right: getw(33)),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Column(
+                      children: [
+                        Container(
+                          width: getw(75),
+                          height: getH(75),
+                          padding: EdgeInsets.all(getw(10)),
+                          decoration: BoxDecoration(
+                            color: Color.fromRGBO(217, 217, 217, 0.6),
+                            borderRadius: BorderRadius.circular(20)
+                          ),
+                          child: SvgPicture.asset('images/tip.svg'),
+                        ),
+                        Text('Medical\ntips/Facts', style: kText6,)
+                      ],
+                    ),
+                    Column(
+                      children: [
+                        Container(
+                          width: getw(75),
+                          height: getH(75),
+                          padding: EdgeInsets.all(getw(10)),
+                          decoration: BoxDecoration(
+                              color: Color.fromRGBO(217, 217, 217, 0.6),
+                              borderRadius: BorderRadius.circular(20)
+                          ),
+                          child: SvgPicture.asset('images/meet.svg'),
+                        ),
+                        Text('Meet a\nDoctor', style: kText6)
+                      ],
+                    ),
+                    Column(
+                      children: [
+                        Container(
+                          width: getw(75),
+                          height: getH(75),
+                          padding: EdgeInsets.all(getw(10)),
+                          decoration: BoxDecoration(
+                              color: Color.fromRGBO(217, 217, 217, 0.6),
+                              borderRadius: BorderRadius.circular(20)
+                          ),
+                          child: SvgPicture.asset('images/diag.svg'),
+                        ),
+                        Text('Maamo \nDiagnosis ', style: kText6)
+                      ],
+                    ),
+                  ],
+                ),
+              ),
+              SizedBox(
+                height: getH(20),
+              ),
+              Padding(
+                padding: EdgeInsets.only(left: getw(37), right: getw(33)),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Column(
+                      children: [
+                        Container(
+                          width: getw(75),
+                          height: getH(75),
+                          padding: EdgeInsets.all(getw(10)),
+                          decoration: BoxDecoration(
+                              color: Color.fromRGBO(217, 217, 217, 0.6),
+                              borderRadius: BorderRadius.circular(20)
+                          ),
+                          child: SvgPicture.asset('images/fit.svg'),
+                        ),
+                        Text('Fitness ', style: kText6)
+                      ],
+                    ),
+                    Column(
+                      children: [
+                        Container(
+                          padding: EdgeInsets.all(getw(10)),
+                          height: getH(75),
+                          width: getw(75),
+                          decoration: BoxDecoration(
+                              color: Color.fromRGBO(217, 217, 217, 0.6),
+                              borderRadius: BorderRadius.circular(20)
+                          ),
+                          child: SvgPicture.asset('images/hosp.svg'),
+                        ),
+                        Text('Hospital \nNear Me ', style: kText6)
+                      ],
+                    ),
+                    Column(
+                      children: [
+                        Container(
+                          padding: EdgeInsets.all(getw(10)),
+                          height: getH(75),
+                          width: getw(75),
+                          decoration: BoxDecoration(
+                              color: Color.fromRGBO(217, 217, 217, 0.6),
+                              borderRadius: BorderRadius.circular(20)
+                          ),
+                          child: SvgPicture.asset('images/nut.svg'),
+                        ),
+                        Text('Nutrition ', style: kText6)
+                      ],
+                    ),
+                  ],
+                ),
+              ),
             ],
           ),
         ],
