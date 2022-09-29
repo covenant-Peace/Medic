@@ -55,3 +55,27 @@ const kText6 = TextStyle(
     fontSize: 18,
     fontStyle: FontStyle.normal
 );
+
+const kText7 = TextStyle(
+    fontFamily: 'HindGuntur',
+    fontWeight: FontWeight.w500,
+    color: Colors.black,
+    fontSize: 18,
+    fontStyle: FontStyle.normal
+);
+
+const kText8 = TextStyle(
+    fontFamily: 'HindGuntur',
+    fontWeight: FontWeight.w500,
+    color: Color(0xff59b44b),
+    fontSize: 18,
+    fontStyle: FontStyle.normal
+);
+
+const kText9 = TextStyle(
+    fontFamily: 'HindGuntur',
+    fontWeight: FontWeight.w500,
+    color: Color(0xffcf6f80),
+    fontSize: 18,
+    fontStyle: FontStyle.normal
+);
