@@ -3,6 +3,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:medic/homesceen.dart';
+import 'package:medic/reminder.dart';
 
 class Navigation extends StatefulWidget {
   int selectedIndex;
@@ -24,7 +25,7 @@ class _NavigationState extends State<Navigation> {
 
   List<Widget> pages = <Widget>[
     HomeScreen(),
-    HomeScreen(),
+    Reminder(),
     HomeScreen(),
     HomeScreen(),
   ];
