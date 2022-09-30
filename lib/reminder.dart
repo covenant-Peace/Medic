@@ -13,6 +13,9 @@ class Reminder extends StatefulWidget {
 
 class _ReminderState extends State<Reminder> {
   bool _value = false;
+  bool _value1 = false;
+  bool _value2 = false;
+  bool _value3 = false;
 
   @override
   Widget build(BuildContext context) {
@@ -56,6 +59,7 @@ class _ReminderState extends State<Reminder> {
             padding:
                 EdgeInsets.only(top: getH(94), left: getw(25), right: getw(21)),
             child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Row(
                   crossAxisAlignment: CrossAxisAlignment.start,
@@ -86,10 +90,10 @@ class _ReminderState extends State<Reminder> {
                     ),
                     Expanded(
                       child: CheckboxListTile(
-                        value: _value,
+                        value: _value1,
                         onChanged: (bool? value) {
                           setState(() {
-                            _value = value!;
+                            _value1 = value!;
                           });
                         },
                         title: Text(
@@ -107,10 +111,10 @@ class _ReminderState extends State<Reminder> {
                     ),
                     Expanded(
                       child: CheckboxListTile(
-                        value: _value,
+                        value: _value2,
                         onChanged: (bool? value) {
                           setState(() {
-                            _value = value!;
+                            _value2 = value!;
                           });
                         },
                         title: Text(
@@ -128,26 +132,68 @@ class _ReminderState extends State<Reminder> {
                     ),
                   ],
                 ),
-                Expanded(
-                  child: CheckboxListTile(
-                    value: _value,
-                    onChanged: (bool? value) {
-                      setState(() {
-                        _value = value!;
-                      });
-                    },
-                    title: Text(
-                      'Fitness',
-                      style: kText6,
-                    ),
-                    checkColor: Colors.black,
-                    activeColor: Colors.white,
-                    side: BorderSide(color: Colors.black),
-                    contentPadding: EdgeInsets.all(0),
-                    controlAffinity: ListTileControlAffinity.leading,
-                    // tristate: true,
+                CheckboxListTile(
+                  value: _value3,
+                  onChanged: (bool? value) {
+                    setState(() {
+                      _value3 = value!;
+                    });
+                  },
+                  title: Text(
+                    'Fitness',
+                    style: kText6,
                   ),
+                  checkColor: Colors.black,
+                  activeColor: Colors.white,
+                  side: BorderSide(color: Colors.black),
+                  contentPadding: EdgeInsets.all(0),
+                  controlAffinity: ListTileControlAffinity.leading,
+                  // tristate: true,
                 ),
+                Container(
+                  decoration: BoxDecoration(
+                      border: Border(
+                        top: BorderSide(
+                            color: Color(0xff59b44b),
+                            width: 1,
+                            style: BorderStyle.solid),
+                        bottom: BorderSide(
+                            color: Color(0xff59b44b),
+                            width: 1,
+                            style: BorderStyle.solid),
+                        left: BorderSide(
+                            color: Color(0xff59b44b),
+                            width: 1,
+                            style: BorderStyle.solid),
+                        right: BorderSide(
+                            color: Color(0xff59b44b),
+                            width: 1,
+                            style: BorderStyle.solid),
+                      ),
+                      color: Color(0xffdefbd9),
+                      borderRadius: BorderRadius.circular(5)),
+                  padding: EdgeInsets.all(5),
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.start,
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          Text(
+                            'IBUCAB',
+                            style: kText10,
+                          ),
+                          Icon(
+                            Icons.notifications,
+                            color: Color(0xffe84c3c),
+                            size: 14,
+                          )
+                        ],
+                      )
+                    ],
+                  ),
+                )
               ],
             ),
           ),
