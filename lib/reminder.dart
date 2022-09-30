@@ -150,50 +150,312 @@ class _ReminderState extends State<Reminder> {
                   controlAffinity: ListTileControlAffinity.leading,
                   // tristate: true,
                 ),
-                Container(
-                  decoration: BoxDecoration(
-                      border: Border(
-                        top: BorderSide(
-                            color: Color(0xff59b44b),
-                            width: 1,
-                            style: BorderStyle.solid),
-                        bottom: BorderSide(
-                            color: Color(0xff59b44b),
-                            width: 1,
-                            style: BorderStyle.solid),
-                        left: BorderSide(
-                            color: Color(0xff59b44b),
-                            width: 1,
-                            style: BorderStyle.solid),
-                        right: BorderSide(
-                            color: Color(0xff59b44b),
-                            width: 1,
-                            style: BorderStyle.solid),
-                      ),
-                      color: Color(0xffdefbd9),
-                      borderRadius: BorderRadius.circular(5)),
-                  padding: EdgeInsets.all(5),
-                  child: Column(
-                    mainAxisAlignment: MainAxisAlignment.start,
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                        children: [
-                          Text(
-                            'IBUCAB',
-                            style: kText10,
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Container(
+                      width: getw(268),
+                      decoration: BoxDecoration(
+                          border: Border(
+                            top: BorderSide(
+                                color: Color(0xff59b44b),
+                                width: 1,
+                                style: BorderStyle.solid),
+                            bottom: BorderSide(
+                                color: Color(0xff59b44b),
+                                width: 1,
+                                style: BorderStyle.solid),
+                            left: BorderSide(
+                                color: Color(0xff59b44b),
+                                width: 1,
+                                style: BorderStyle.solid),
+                            right: BorderSide(
+                                color: Color(0xff59b44b),
+                                width: 1,
+                                style: BorderStyle.solid),
                           ),
-                          Icon(
-                            Icons.notifications,
-                            color: Color(0xffe84c3c),
-                            size: 14,
+                          color: Color(0xffdefbd9),
+                          borderRadius: BorderRadius.circular(5)),
+                      padding: EdgeInsets.all(5),
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.start,
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                            children: [
+                              Text(
+                                'IBUCAB',
+                                style: kText10,
+                              ),
+                              Icon(
+                                Icons.notifications,
+                                color: Color(0xffe84c3c),
+                                size: 14,
+                              )
+                            ],
+                          ),
+                          SizedBox(
+                            height: getH(5),
+                          ),
+                          Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                            children: [
+                              Column(
+                                children: [
+                                  SvgPicture.asset('images/1.svg'),
+                                  SizedBox(
+                                    height: getH(5),
+                                  ),
+                                  Text('07 : 00am ', style: kText11,),
+                                  SizedBox(
+                                    height: getH(2),
+                                  ),
+                                  Text('2 morning', style: kText11)
+                                ],
+                              ),
+                              Column(
+                                children: [
+                                  SvgPicture.asset('images/2.svg'),
+                                  SizedBox(
+                                    height: getH(5),
+                                  ),
+                                  Text('02 : 00pm ', style: kText11),
+                                  SizedBox(
+                                    height: getH(2),
+                                  ),
+                                  Text('2 afternoon', style: kText11)
+                                ],
+                              ),
+                              Column(
+                                children: [
+                                  SvgPicture.asset('images/3.svg'),
+                                  SizedBox(
+                                    height: getH(5),
+                                  ),
+                                  Text('07 : 00pm ', style: kText11),
+                                  SizedBox(
+                                    height: getH(2),
+                                  ),
+                                  Text('2 night', style: kText11)
+                                ],
+                              ),
+                            ],
                           )
                         ],
-                      )
-                    ],
-                  ),
-                )
+                      ),
+                    ),
+                    SvgPicture.asset('images/close.svg'),
+                    SvgPicture.asset('images/edit.svg'),
+                  ],
+                ),
+                SizedBox(
+                  height: getH(24),
+                ),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Container(
+                      width: getw(268),
+                      decoration: BoxDecoration(
+                          border: Border(
+                            top: BorderSide(
+                                color: Color(0xff3376b5),
+                                width: 1,
+                                style: BorderStyle.solid),
+                            bottom: BorderSide(
+                                color: Color(0xff3376b5),
+                                width: 1,
+                                style: BorderStyle.solid),
+                            left: BorderSide(
+                                color: Color(0xff3376b5),
+                                width: 1,
+                                style: BorderStyle.solid),
+                            right: BorderSide(
+                                color: Color(0xff3376b5),
+                                width: 1,
+                                style: BorderStyle.solid),
+                          ),
+                          color: Color(0xffc0e8f9),
+                          borderRadius: BorderRadius.circular(5)),
+                      padding: EdgeInsets.all(5),
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.start,
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                            children: [
+                              Text(
+                                'JOGGING',
+                                style: kText6,
+                              ),
+                              Icon(
+                                Icons.notifications,
+                                color: Color(0xffe84c3c),
+                                size: 14,
+                              )
+                            ],
+                          ),
+                          SizedBox(
+                            height: getH(5),
+                          ),
+                          Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                            children: [
+                              Column(
+                                children: [
+                                  SvgPicture.asset('images/1.svg'),
+                                  SizedBox(
+                                    height: getH(5),
+                                  ),
+                                  Text('07 : 00am ', style: kText11,),
+                                  SizedBox(
+                                    height: getH(2),
+                                  ),
+                                  Text('2 morning', style: kText11)
+                                ],
+                              ),
+                              Column(
+                                children: [
+                                  SvgPicture.asset('images/2.svg'),
+                                  SizedBox(
+                                    height: getH(5),
+                                  ),
+                                  Text('02 : 00pm ', style: kText11),
+                                  SizedBox(
+                                    height: getH(2),
+                                  ),
+                                  Text('2 afternoon', style: kText11)
+                                ],
+                              ),
+                              Column(
+                                children: [
+                                  SvgPicture.asset('images/3.svg'),
+                                  SizedBox(
+                                    height: getH(5),
+                                  ),
+                                  Text('07 : 00pm ', style: kText11),
+                                  SizedBox(
+                                    height: getH(2),
+                                  ),
+                                  Text('2 night', style: kText11)
+                                ],
+                              ),
+                            ],
+                          )
+                        ],
+                      ),
+                    ),
+                    SvgPicture.asset('images/close.svg'),
+                    SvgPicture.asset('images/edit.svg'),
+                  ],
+                ),
+                SizedBox(
+                  height: getH(24),
+                ),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Container(
+                      width: getw(268),
+                      decoration: BoxDecoration(
+                          border: Border(
+                            top: BorderSide(
+                                color: Color(0xffe3a37f),
+                                width: 1,
+                                style: BorderStyle.solid),
+                            bottom: BorderSide(
+                                color: Color(0xffe3a37f),
+                                width: 1,
+                                style: BorderStyle.solid),
+                            left: BorderSide(
+                                color: Color(0xffe3a37f),
+                                width: 1,
+                                style: BorderStyle.solid),
+                            right: BorderSide(
+                                color: Color(0xffe3a37f),
+                                width: 1,
+                                style: BorderStyle.solid),
+                          ),
+                          color: Color(0xfff5e7d7),
+                          borderRadius: BorderRadius.circular(5)),
+                      padding: EdgeInsets.all(5),
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.start,
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                            children: [
+                              Text(
+                                'Meet Dr. Amsat',
+                                style: kText2,
+                              ),
+                              Icon(
+                                Icons.notifications,
+                                color: Color(0xffe84c3c),
+                                size: 14,
+                              )
+                            ],
+                          ),
+                          SizedBox(
+                            height: getH(5),
+                          ),
+                          Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                            children: [
+                              Column(
+                                children: [
+                                  SvgPicture.asset('images/1.svg'),
+                                  SizedBox(
+                                    height: getH(5),
+                                  ),
+                                  Text('07 : 00am ', style: kText11,),
+                                  SizedBox(
+                                    height: getH(2),
+                                  ),
+                                  Text('2 morning', style: kText11)
+                                ],
+                              ),
+                              Column(
+                                children: [
+                                  SvgPicture.asset('images/2.svg'),
+                                  SizedBox(
+                                    height: getH(5),
+                                  ),
+                                  Text('02 : 00pm ', style: kText11),
+                                  SizedBox(
+                                    height: getH(2),
+                                  ),
+                                  Text('2 afternoon', style: kText11)
+                                ],
+                              ),
+                              Column(
+                                children: [
+                                  SvgPicture.asset('images/3.svg'),
+                                  SizedBox(
+                                    height: getH(5),
+                                  ),
+                                  Text('07 : 00pm ', style: kText11),
+                                  SizedBox(
+                                    height: getH(2),
+                                  ),
+                                  Text('2 night', style: kText11)
+                                ],
+                              ),
+                            ],
+                          )
+                        ],
+                      ),
+                    ),
+                    SvgPicture.asset('images/close.svg'),
+                    SvgPicture.asset('images/edit.svg'),
+                  ],
+                ),
+                SizedBox(
+                  height: getH(24),
+                ),
               ],
             ),
           ),
