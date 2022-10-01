@@ -119,3 +119,19 @@ const kText14 = TextStyle(
     fontSize: 12,
     fontStyle: FontStyle.normal
 );
+
+const kText15 = TextStyle(
+    fontFamily: 'HindGuntur',
+    fontWeight: FontWeight.w600,
+    color: Color.fromRGBO(0, 0, 0, 0.5),
+    fontSize: 16,
+    fontStyle: FontStyle.normal
+);
+
+const kText16 = TextStyle(
+    fontFamily: 'HindGuntur',
+    fontWeight: FontWeight.w600,
+    color: Color.fromRGBO(0, 0, 0, 0.5),
+    fontSize: 12,
+    fontStyle: FontStyle.normal
+);

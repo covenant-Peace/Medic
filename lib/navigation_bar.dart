@@ -3,6 +3,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:medic/homesceen.dart';
+import 'package:medic/newsletter.dart';
 import 'package:medic/reminder.dart';
 
 class Navigation extends StatefulWidget {
@@ -26,7 +27,7 @@ class _NavigationState extends State<Navigation> {
   List<Widget> pages = <Widget>[
     HomeScreen(),
     Reminder(),
-    HomeScreen(),
+    News(),
     HomeScreen(),
   ];
 
