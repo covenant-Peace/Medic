@@ -469,8 +469,19 @@ class _ReminderState extends State<Reminder> {
                   ],
                 ),
                 SizedBox(
-                  height: getH(24),
+                  height: getH(27),
                 ),
+                Center(
+                  child: Container(
+                    decoration: BoxDecoration(
+                      color: Color(0xffdefbd9),
+                      borderRadius: BorderRadius.circular(50)
+                    ),
+                    padding: EdgeInsets.only(left: getw(7), right: getw(8)),
+                    // alignment: Alignment.center,
+                    child: Text('+ add notification', style: kText14,),
+                  ),
+                )
               ],
             ),
           ),
