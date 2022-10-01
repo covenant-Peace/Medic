@@ -3,6 +3,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:medic/constants.dart';
+import 'package:medic/fitness.dart';
+import 'package:medic/nutrition.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({Key? key}) : super(key: key);
@@ -66,12 +68,14 @@ class _HomeScreenState extends State<HomeScreen> {
                           height: getH(75),
                           padding: EdgeInsets.all(getw(10)),
                           decoration: BoxDecoration(
-                            color: Color.fromRGBO(217, 217, 217, 0.6),
-                            borderRadius: BorderRadius.circular(20)
-                          ),
+                              color: Color.fromRGBO(217, 217, 217, 0.6),
+                              borderRadius: BorderRadius.circular(20)),
                           child: SvgPicture.asset('images/tip.svg'),
                         ),
-                        Text('Medical\ntips/Facts', style: kText6,)
+                        Text(
+                          'Medical\ntips/Facts',
+                          style: kText6,
+                        )
                       ],
                     ),
                     Column(
@@ -82,8 +86,7 @@ class _HomeScreenState extends State<HomeScreen> {
                           padding: EdgeInsets.all(getw(10)),
                           decoration: BoxDecoration(
                               color: Color.fromRGBO(217, 217, 217, 0.6),
-                              borderRadius: BorderRadius.circular(20)
-                          ),
+                              borderRadius: BorderRadius.circular(20)),
                           child: SvgPicture.asset('images/meet.svg'),
                         ),
                         Text('Meet a\nDoctor', style: kText6)
@@ -97,8 +100,7 @@ class _HomeScreenState extends State<HomeScreen> {
                           padding: EdgeInsets.all(getw(10)),
                           decoration: BoxDecoration(
                               color: Color.fromRGBO(217, 217, 217, 0.6),
-                              borderRadius: BorderRadius.circular(20)
-                          ),
+                              borderRadius: BorderRadius.circular(20)),
                           child: SvgPicture.asset('images/diag.svg'),
                         ),
                         Text('Maamo \nDiagnosis ', style: kText6)
@@ -118,15 +120,22 @@ class _HomeScreenState extends State<HomeScreen> {
                   children: [
                     Column(
                       children: [
-                        Container(
-                          width: getw(75),
-                          height: getH(75),
-                          padding: EdgeInsets.all(getw(10)),
-                          decoration: BoxDecoration(
-                              color: Color.fromRGBO(217, 217, 217, 0.6),
-                              borderRadius: BorderRadius.circular(20)
+                        GestureDetector(
+                          onTap: () {
+                            Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) => Fitness()));
+                          },
+                          child: Container(
+                            width: getw(75),
+                            height: getH(75),
+                            padding: EdgeInsets.all(getw(10)),
+                            decoration: BoxDecoration(
+                                color: Color.fromRGBO(217, 217, 217, 0.6),
+                                borderRadius: BorderRadius.circular(20)),
+                            child: SvgPicture.asset('images/fit.svg'),
                           ),
-                          child: SvgPicture.asset('images/fit.svg'),
                         ),
                         Text('Fitness ', style: kText6)
                       ],
@@ -139,8 +148,7 @@ class _HomeScreenState extends State<HomeScreen> {
                           width: getw(75),
                           decoration: BoxDecoration(
                               color: Color.fromRGBO(217, 217, 217, 0.6),
-                              borderRadius: BorderRadius.circular(20)
-                          ),
+                              borderRadius: BorderRadius.circular(20)),
                           child: SvgPicture.asset('images/hosp.svg'),
                         ),
                         Text('Hospital \nNear Me ', style: kText6)
@@ -148,15 +156,22 @@ class _HomeScreenState extends State<HomeScreen> {
                     ),
                     Column(
                       children: [
-                        Container(
-                          padding: EdgeInsets.all(getw(10)),
-                          height: getH(75),
-                          width: getw(75),
-                          decoration: BoxDecoration(
-                              color: Color.fromRGBO(217, 217, 217, 0.6),
-                              borderRadius: BorderRadius.circular(20)
+                        GestureDetector(
+                          onTap: () {
+                            Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) => Nutrition()));
+                          },
+                          child: Container(
+                            padding: EdgeInsets.all(getw(10)),
+                            height: getH(75),
+                            width: getw(75),
+                            decoration: BoxDecoration(
+                                color: Color.fromRGBO(217, 217, 217, 0.6),
+                                borderRadius: BorderRadius.circular(20)),
+                            child: SvgPicture.asset('images/nut.svg'),
                           ),
-                          child: SvgPicture.asset('images/nut.svg'),
                         ),
                         Text('Nutrition ', style: kText6)
                       ],
