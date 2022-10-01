@@ -5,6 +5,7 @@ import 'package:flutter_svg/svg.dart';
 import 'package:medic/constants.dart';
 import 'package:medic/fitness.dart';
 import 'package:medic/nutrition.dart';
+import 'package:medic/tips.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({Key? key}) : super(key: key);
@@ -63,14 +64,22 @@ class _HomeScreenState extends State<HomeScreen> {
                   children: [
                     Column(
                       children: [
-                        Container(
-                          width: getw(75),
-                          height: getH(75),
-                          padding: EdgeInsets.all(getw(10)),
-                          decoration: BoxDecoration(
-                              color: Color.fromRGBO(217, 217, 217, 0.6),
-                              borderRadius: BorderRadius.circular(20)),
-                          child: SvgPicture.asset('images/tip.svg'),
+                        GestureDetector(
+                          onTap: () {
+                            Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) => Tips()));
+                          },
+                          child: Container(
+                            width: getw(75),
+                            height: getH(75),
+                            padding: EdgeInsets.all(getw(10)),
+                            decoration: BoxDecoration(
+                                color: Color.fromRGBO(217, 217, 217, 0.6),
+                                borderRadius: BorderRadius.circular(20)),
+                            child: SvgPicture.asset('images/tip.svg'),
+                          ),
                         ),
                         Text(
                           'Medical\ntips/Facts',
