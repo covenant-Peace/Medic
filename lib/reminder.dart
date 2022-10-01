@@ -207,7 +207,10 @@ class _ReminderState extends State<Reminder> {
                                   SizedBox(
                                     height: getH(5),
                                   ),
-                                  Text('07 : 00am ', style: kText11,),
+                                  Text(
+                                    '07 : 00am ',
+                                    style: kText11,
+                                  ),
                                   SizedBox(
                                     height: getH(2),
                                   ),
@@ -305,41 +308,86 @@ class _ReminderState extends State<Reminder> {
                             children: [
                               Column(
                                 children: [
-                                  SvgPicture.asset('images/1.svg'),
+                                  Text('7 pm', style: kText11,),
                                   SizedBox(
                                     height: getH(5),
                                   ),
-                                  Text('07 : 00am ', style: kText11,),
-                                  SizedBox(
-                                    height: getH(2),
+                                  Text(
+                                    'Mon',
+                                    style: kText11,
                                   ),
-                                  Text('2 morning', style: kText11)
                                 ],
                               ),
                               Column(
                                 children: [
-                                  SvgPicture.asset('images/2.svg'),
+                                  Text('7 pm', style: kText14,),
                                   SizedBox(
                                     height: getH(5),
                                   ),
-                                  Text('02 : 00pm ', style: kText11),
-                                  SizedBox(
-                                    height: getH(2),
+                                  Text(
+                                    'Tue',
+                                    style: kText14,
                                   ),
-                                  Text('2 afternoon', style: kText11)
                                 ],
                               ),
                               Column(
                                 children: [
-                                  SvgPicture.asset('images/3.svg'),
+                                  Text('7 am', style: kText11,),
                                   SizedBox(
                                     height: getH(5),
                                   ),
-                                  Text('07 : 00pm ', style: kText11),
-                                  SizedBox(
-                                    height: getH(2),
+                                  Text(
+                                    'Wed',
+                                    style: kText11,
                                   ),
-                                  Text('2 night', style: kText11)
+                                ],
+                              ),
+                              Column(
+                                children: [
+                                  Text('7 am', style: kText14,),
+                                  SizedBox(
+                                    height: getH(5),
+                                  ),
+                                  Text(
+                                    'Thur',
+                                    style: kText14,
+                                  ),
+                                ],
+                              ),
+                              Column(
+                                children: [
+                                  Text('7 am', style: kText11,),
+                                  SizedBox(
+                                    height: getH(5),
+                                  ),
+                                  Text(
+                                    'Fri',
+                                    style: kText11,
+                                  ),
+                                ],
+                              ),
+                              Column(
+                                children: [
+                                  Text('7 am', style: kText14,),
+                                  SizedBox(
+                                    height: getH(5),
+                                  ),
+                                  Text(
+                                    'Sat',
+                                    style: kText14,
+                                  ),
+                                ],
+                              ),
+                              Column(
+                                children: [
+                                  Text('7 am', style: kText11,),
+                                  SizedBox(
+                                    height: getH(5),
+                                  ),
+                                  Text(
+                                    'Sun',
+                                    style: kText11,
+                                  ),
                                 ],
                               ),
                             ],
@@ -390,7 +438,7 @@ class _ReminderState extends State<Reminder> {
                             children: [
                               Text(
                                 'Meet Dr. Amsat',
-                                style: kText2,
+                                style: kText13,
                               ),
                               Icon(
                                 Icons.notifications,
@@ -400,51 +448,18 @@ class _ReminderState extends State<Reminder> {
                             ],
                           ),
                           SizedBox(
+                            height: getH(2),
+                          ),
+                          Text(
+                            '3, love all street, Ketu Lagos.',
+                            style: kText11,
+                          ),
+                          SizedBox(
                             height: getH(5),
                           ),
-                          Row(
-                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                            children: [
-                              Column(
-                                children: [
-                                  SvgPicture.asset('images/1.svg'),
-                                  SizedBox(
-                                    height: getH(5),
-                                  ),
-                                  Text('07 : 00am ', style: kText11,),
-                                  SizedBox(
-                                    height: getH(2),
-                                  ),
-                                  Text('2 morning', style: kText11)
-                                ],
-                              ),
-                              Column(
-                                children: [
-                                  SvgPicture.asset('images/2.svg'),
-                                  SizedBox(
-                                    height: getH(5),
-                                  ),
-                                  Text('02 : 00pm ', style: kText11),
-                                  SizedBox(
-                                    height: getH(2),
-                                  ),
-                                  Text('2 afternoon', style: kText11)
-                                ],
-                              ),
-                              Column(
-                                children: [
-                                  SvgPicture.asset('images/3.svg'),
-                                  SizedBox(
-                                    height: getH(5),
-                                  ),
-                                  Text('07 : 00pm ', style: kText11),
-                                  SizedBox(
-                                    height: getH(2),
-                                  ),
-                                  Text('2 night', style: kText11)
-                                ],
-                              ),
-                            ],
+                          Text(
+                            '2 : 00pm',
+                            style: kText11,
                           )
                         ],
                       ),
