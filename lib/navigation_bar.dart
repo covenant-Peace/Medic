@@ -3,6 +3,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:medic/homesceen.dart';
+import 'package:medic/me.dart';
 import 'package:medic/newsletter.dart';
 import 'package:medic/reminder.dart';
 
@@ -28,7 +29,7 @@ class _NavigationState extends State<Navigation> {
     HomeScreen(),
     Reminder(),
     News(),
-    HomeScreen(),
+    Me(),
   ];
 
   @override
