@@ -143,3 +143,11 @@ const kText17 = TextStyle(
     fontSize: 16,
     fontStyle: FontStyle.normal
 );
+
+const kText18 = TextStyle(
+    fontFamily: 'HindGuntur',
+    fontWeight: FontWeight.w500,
+    color: Color(0xff9e6d0d),
+    fontSize: 18,
+    fontStyle: FontStyle.normal
+);
