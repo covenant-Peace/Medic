@@ -184,7 +184,10 @@ class _PhysicianState extends State<Physician> {
                                 'Dr. Amsat',
                                 style: kText7,
                               ),
-                              Text('Tooth Dentist', style: kText11,)
+                              Text(
+                                'Tooth Dentist',
+                                style: kText11,
+                              )
                             ],
                           ),
                         ],
@@ -207,61 +210,6 @@ class _PhysicianState extends State<Physician> {
                   decoration: BoxDecoration(
                       border: Border(
                         top: BorderSide(
-                            color: Color(0xffe84c3c),
-                            width: 1,
-                            style: BorderStyle.solid),
-                        bottom: BorderSide(
-                            color: Color(0xffe84c3c),
-                            width: 1,
-                            style: BorderStyle.solid),
-                        left: BorderSide(
-                            color: Color(0xffe84c3c),
-                            width: 1,
-                            style: BorderStyle.solid),
-                        right: BorderSide(
-                            color: Color(0xffe84c3c),
-                            width: 1,
-                            style: BorderStyle.solid),
-                      ),
-                      color: Color(0xfff5e7d7),
-                      borderRadius: BorderRadius.circular(5)),
-                  padding: EdgeInsets.all(5),
-                  child: Column(
-                    mainAxisAlignment: MainAxisAlignment.start,
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Row(
-                        mainAxisAlignment: MainAxisAlignment.start,
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          Text(
-                            '●  ',
-                            style: TextStyle(color: Color(0xffe84c3c)),
-                          ),
-                          Text(
-                            ' Good meals you want to try out',
-                            style: kText7,
-                          ),
-                        ],
-                      ),
-                      Padding(
-                        padding: EdgeInsets.only(left: getw(18)),
-                        child: Text(
-                          'Amala a yoruba man’s food  jjjjjjjjjjjjjjjjjjjjjdhbj sghetsk jbwjwgtnbsk hsghdj gbhsm',
-                          style: kText11,
-                        ),
-                      )
-                    ],
-                  ),
-                ),
-                SizedBox(
-                  height: getH(27),
-                ),
-                Container(
-                  // width: getw(268),
-                  decoration: BoxDecoration(
-                      border: Border(
-                        top: BorderSide(
                             color: Color(0xff3376b5),
                             width: 1,
                             style: BorderStyle.solid),
@@ -293,16 +241,55 @@ class _PhysicianState extends State<Physician> {
                             '●  ',
                             style: TextStyle(color: Color(0xff392cfe)),
                           ),
-                          Text(
-                            ' Good meals you want to try out',
-                            style: kText7,
+                          Container(
+                            height: getH(38),
+                            width: getw(38),
+                            decoration: BoxDecoration(
+                              color: Color(0xffc0e8f9),
+                              borderRadius: BorderRadius.circular(5),
+                              border: Border(
+                                top: BorderSide(
+                                    color: Color(0xff3376b5),
+                                    width: 1,
+                                    style: BorderStyle.solid),
+                                bottom: BorderSide(
+                                    color: Color(0xff3376b5),
+                                    width: 1,
+                                    style: BorderStyle.solid),
+                                left: BorderSide(
+                                    color: Color(0xff3376b5),
+                                    width: 1,
+                                    style: BorderStyle.solid),
+                                right: BorderSide(
+                                    color: Color(0xff3376b5),
+                                    width: 1,
+                                    style: BorderStyle.solid),
+                              ),
+                            ),
+                            child: SvgPicture.asset('images/pipa.svg'),
+                          ),
+                          SizedBox(
+                            width: getw(5),
+                          ),
+                          Column(
+                            mainAxisAlignment: MainAxisAlignment.start,
+                            children: [
+                              Text(
+                                'Dr. Muktai',
+                                style: kText7,
+                              ),
+                              Text(
+                                'Tooth Dentist',
+                                style: kText11,
+                              )
+                            ],
                           ),
                         ],
                       ),
                       Padding(
                         padding: EdgeInsets.only(left: getw(18)),
                         child: Text(
-                          'Amala a yoruba man’s food  jjjjjjjjjjjjjjjjjjjjjdhbj sghetsk jbwjwgtnbsk hsghdj gbhsm',
+                          'Location: Lagos MainLand.',
                           style: kText11,
                         ),
                       )
@@ -310,334 +297,7 @@ class _PhysicianState extends State<Physician> {
                   ),
                 ),
                 SizedBox(
-                  height: getH(27),
-                ),
-                Container(
-                  // width: getw(268),
-                  decoration: BoxDecoration(
-                      border: Border(
-                        top: BorderSide(
-                            color: Color(0xff59b44b),
-                            width: 1,
-                            style: BorderStyle.solid),
-                        bottom: BorderSide(
-                            color: Color(0xff59b44b),
-                            width: 1,
-                            style: BorderStyle.solid),
-                        left: BorderSide(
-                            color: Color(0xff59b44b),
-                            width: 1,
-                            style: BorderStyle.solid),
-                        right: BorderSide(
-                            color: Color(0xff59b44b),
-                            width: 1,
-                            style: BorderStyle.solid),
-                      ),
-                      color: Color(0xffdefbd9),
-                      borderRadius: BorderRadius.circular(5)),
-                  padding: EdgeInsets.all(5),
-                  child: Column(
-                    mainAxisAlignment: MainAxisAlignment.start,
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Row(
-                        mainAxisAlignment: MainAxisAlignment.start,
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          Text(
-                            '●  ',
-                            style: TextStyle(color: Color(0xff59b44b)),
-                          ),
-                          Text(
-                            ' Good meals you want to try out',
-                            style: kText7,
-                          ),
-                        ],
-                      ),
-                      Padding(
-                        padding: EdgeInsets.only(left: getw(18)),
-                        child: Text(
-                          'Amala a yoruba man’s food  jjjjjjjjjjjjjjjjjjjjjdhbj sghetsk jbwjwgtnbsk hsghdj gbhsm',
-                          style: kText11,
-                        ),
-                      )
-                    ],
-                  ),
-                ),
-                SizedBox(
-                  height: getH(27),
-                ),
-                Container(
-                  // width: getw(268),
-                  decoration: BoxDecoration(
-                      border: Border(
-                        top: BorderSide(
-                            color: Color(0xffe84c3c),
-                            width: 1,
-                            style: BorderStyle.solid),
-                        bottom: BorderSide(
-                            color: Color(0xffe84c3c),
-                            width: 1,
-                            style: BorderStyle.solid),
-                        left: BorderSide(
-                            color: Color(0xffe84c3c),
-                            width: 1,
-                            style: BorderStyle.solid),
-                        right: BorderSide(
-                            color: Color(0xffe84c3c),
-                            width: 1,
-                            style: BorderStyle.solid),
-                      ),
-                      color: Color(0xfff5e7d7),
-                      borderRadius: BorderRadius.circular(5)),
-                  padding: EdgeInsets.all(5),
-                  child: Column(
-                    mainAxisAlignment: MainAxisAlignment.start,
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Row(
-                        mainAxisAlignment: MainAxisAlignment.start,
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          Text(
-                            '●  ',
-                            style: TextStyle(color: Color(0xffe84c3c)),
-                          ),
-                          Text(
-                            ' Good meals you want to try out',
-                            style: kText7,
-                          ),
-                        ],
-                      ),
-                      Padding(
-                        padding: EdgeInsets.only(left: getw(18)),
-                        child: Text(
-                          'Amala a yoruba man’s food  jjjjjjjjjjjjjjjjjjjjjdhbj sghetsk jbwjwgtnbsk hsghdj gbhsm',
-                          style: kText11,
-                        ),
-                      )
-                    ],
-                  ),
-                ),
-                SizedBox(
-                  height: getH(27),
-                ),
-                Container(
-                  // width: getw(268),
-                  decoration: BoxDecoration(
-                      border: Border(
-                        top: BorderSide(
-                            color: Color(0xff3376b5),
-                            width: 1,
-                            style: BorderStyle.solid),
-                        bottom: BorderSide(
-                            color: Color(0xff3376b5),
-                            width: 1,
-                            style: BorderStyle.solid),
-                        left: BorderSide(
-                            color: Color(0xff3376b5),
-                            width: 1,
-                            style: BorderStyle.solid),
-                        right: BorderSide(
-                            color: Color(0xff3376b5),
-                            width: 1,
-                            style: BorderStyle.solid),
-                      ),
-                      color: Color(0xffc0e8f9),
-                      borderRadius: BorderRadius.circular(5)),
-                  padding: EdgeInsets.all(5),
-                  child: Column(
-                    mainAxisAlignment: MainAxisAlignment.start,
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Row(
-                        mainAxisAlignment: MainAxisAlignment.start,
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          Text(
-                            '●  ',
-                            style: TextStyle(color: Color(0xff392cfe)),
-                          ),
-                          Text(
-                            ' Good meals you want to try out',
-                            style: kText7,
-                          ),
-                        ],
-                      ),
-                      Padding(
-                        padding: EdgeInsets.only(left: getw(18)),
-                        child: Text(
-                          'Amala a yoruba man’s food  jjjjjjjjjjjjjjjjjjjjjdhbj sghetsk jbwjwgtnbsk hsghdj gbhsm',
-                          style: kText11,
-                        ),
-                      )
-                    ],
-                  ),
-                ),
-                SizedBox(
-                  height: getH(27),
-                ),
-                Container(
-                  // width: getw(268),
-                  decoration: BoxDecoration(
-                      border: Border(
-                        top: BorderSide(
-                            color: Color(0xff59b44b),
-                            width: 1,
-                            style: BorderStyle.solid),
-                        bottom: BorderSide(
-                            color: Color(0xff59b44b),
-                            width: 1,
-                            style: BorderStyle.solid),
-                        left: BorderSide(
-                            color: Color(0xff59b44b),
-                            width: 1,
-                            style: BorderStyle.solid),
-                        right: BorderSide(
-                            color: Color(0xff59b44b),
-                            width: 1,
-                            style: BorderStyle.solid),
-                      ),
-                      color: Color(0xffdefbd9),
-                      borderRadius: BorderRadius.circular(5)),
-                  padding: EdgeInsets.all(5),
-                  child: Column(
-                    mainAxisAlignment: MainAxisAlignment.start,
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Row(
-                        mainAxisAlignment: MainAxisAlignment.start,
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          Text(
-                            '●  ',
-                            style: TextStyle(color: Color(0xff59b44b)),
-                          ),
-                          Text(
-                            ' Good meals you want to try out',
-                            style: kText7,
-                          ),
-                        ],
-                      ),
-                      Padding(
-                        padding: EdgeInsets.only(left: getw(18)),
-                        child: Text(
-                          'Amala a yoruba man’s food  jjjjjjjjjjjjjjjjjjjjjdhbj sghetsk jbwjwgtnbsk hsghdj gbhsm',
-                          style: kText11,
-                        ),
-                      )
-                    ],
-                  ),
-                ),
-                SizedBox(
-                  height: getH(27),
-                ),
-                Container(
-                  // width: getw(268),
-                  decoration: BoxDecoration(
-                      border: Border(
-                        top: BorderSide(
-                            color: Color(0xffe84c3c),
-                            width: 1,
-                            style: BorderStyle.solid),
-                        bottom: BorderSide(
-                            color: Color(0xffe84c3c),
-                            width: 1,
-                            style: BorderStyle.solid),
-                        left: BorderSide(
-                            color: Color(0xffe84c3c),
-                            width: 1,
-                            style: BorderStyle.solid),
-                        right: BorderSide(
-                            color: Color(0xffe84c3c),
-                            width: 1,
-                            style: BorderStyle.solid),
-                      ),
-                      color: Color(0xfff5e7d7),
-                      borderRadius: BorderRadius.circular(5)),
-                  padding: EdgeInsets.all(5),
-                  child: Column(
-                    mainAxisAlignment: MainAxisAlignment.start,
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Row(
-                        mainAxisAlignment: MainAxisAlignment.start,
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          Text(
-                            '●  ',
-                            style: TextStyle(color: Color(0xffe84c3c)),
-                          ),
-                          Text(
-                            ' Good meals you want to try out',
-                            style: kText7,
-                          ),
-                        ],
-                      ),
-                      Padding(
-                        padding: EdgeInsets.only(left: getw(18)),
-                        child: Text(
-                          'Amala a yoruba man’s food  jjjjjjjjjjjjjjjjjjjjjdhbj sghetsk jbwjwgtnbsk hsghdj gbhsm',
-                          style: kText11,
-                        ),
-                      )
-                    ],
-                  ),
-                ),
-                SizedBox(
-                  height: getH(27),
-                ),
-                Container(
-                  // width: getw(268),
-                  decoration: BoxDecoration(
-                      border: Border(
-                        top: BorderSide(
-                            color: Color(0xff3376b5),
-                            width: 1,
-                            style: BorderStyle.solid),
-                        bottom: BorderSide(
-                            color: Color(0xff3376b5),
-                            width: 1,
-                            style: BorderStyle.solid),
-                        left: BorderSide(
-                            color: Color(0xff3376b5),
-                            width: 1,
-                            style: BorderStyle.solid),
-                        right: BorderSide(
-                            color: Color(0xff3376b5),
-                            width: 1,
-                            style: BorderStyle.solid),
-                      ),
-                      color: Color(0xffc0e8f9),
-                      borderRadius: BorderRadius.circular(5)),
-                  padding: EdgeInsets.all(5),
-                  child: Column(
-                    mainAxisAlignment: MainAxisAlignment.start,
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Row(
-                        mainAxisAlignment: MainAxisAlignment.start,
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          Text(
-                            '●  ',
-                            style: TextStyle(color: Color(0xff392cfe)),
-                          ),
-                          Text(
-                            ' Good meals you want to try out',
-                            style: kText7,
-                          ),
-                        ],
-                      ),
-                      Padding(
-                        padding: EdgeInsets.only(left: getw(18)),
-                        child: Text(
-                          'Amala a yoruba man’s food  jjjjjjjjjjjjjjjjjjjjjdhbj sghetsk jbwjwgtnbsk hsghdj gbhsm',
-                          style: kText11,
-                        ),
-                      )
-                    ],
-                  ),
+                  height: getH(22),
                 ),
               ],
             ),
