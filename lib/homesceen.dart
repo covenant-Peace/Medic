@@ -2,6 +2,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
+import 'package:medic/about.dart';
 import 'package:medic/constants.dart';
 import 'package:medic/fitness.dart';
 import 'package:medic/nutrition.dart';
@@ -151,14 +152,22 @@ class _HomeScreenState extends State<HomeScreen> {
                     ),
                     Column(
                       children: [
-                        Container(
-                          padding: EdgeInsets.all(getw(10)),
-                          height: getH(75),
-                          width: getw(75),
-                          decoration: BoxDecoration(
-                              color: Color.fromRGBO(217, 217, 217, 0.6),
-                              borderRadius: BorderRadius.circular(20)),
-                          child: SvgPicture.asset('images/hosp.svg'),
+                        GestureDetector(
+                          onTap: () {
+                            Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) => About()));
+                          },
+                          child: Container(
+                            padding: EdgeInsets.all(getw(10)),
+                            height: getH(75),
+                            width: getw(75),
+                            decoration: BoxDecoration(
+                                color: Color.fromRGBO(217, 217, 217, 0.6),
+                                borderRadius: BorderRadius.circular(20)),
+                            child: SvgPicture.asset('images/hosp.svg'),
+                          ),
                         ),
                         Text('Hospital \nNear Me ', style: kText6)
                       ],
