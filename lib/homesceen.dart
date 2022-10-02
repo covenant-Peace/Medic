@@ -6,6 +6,7 @@ import 'package:medic/about.dart';
 import 'package:medic/constants.dart';
 import 'package:medic/fitness.dart';
 import 'package:medic/nutrition.dart';
+import 'package:medic/physician.dart';
 import 'package:medic/tips.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -90,14 +91,19 @@ class _HomeScreenState extends State<HomeScreen> {
                     ),
                     Column(
                       children: [
-                        Container(
-                          width: getw(75),
-                          height: getH(75),
-                          padding: EdgeInsets.all(getw(10)),
-                          decoration: BoxDecoration(
-                              color: Color.fromRGBO(217, 217, 217, 0.6),
-                              borderRadius: BorderRadius.circular(20)),
-                          child: SvgPicture.asset('images/meet.svg'),
+                        GestureDetector(
+                          onTap: (){
+                            Navigator.push(context, MaterialPageRoute(builder:(context)=>Physician()));
+                          },
+                          child: Container(
+                            width: getw(75),
+                            height: getH(75),
+                            padding: EdgeInsets.all(getw(10)),
+                            decoration: BoxDecoration(
+                                color: Color.fromRGBO(217, 217, 217, 0.6),
+                                borderRadius: BorderRadius.circular(20)),
+                            child: SvgPicture.asset('images/meet.svg'),
+                          ),
                         ),
                         Text('Meet a\nDoctor', style: kText6)
                       ],
