@@ -96,13 +96,13 @@ const kText11 = TextStyle(
     fontStyle: FontStyle.normal
 );
 
-const kText12 = TextStyle(
-    fontFamily: 'HindGuntur',
-    fontWeight: FontWeight.w500,
-    color: Color(0xff392),
-    fontSize: 18,
-    fontStyle: FontStyle.normal
-);
+// const kText12 = TextStyle(
+//     fontFamily: 'HindGuntur',
+//     fontWeight: FontWeight.w500,
+//     color: Color(0xff392),
+//     fontSize: 18,
+//     fontStyle: FontStyle.normal
+// );
 
 const kText13 = TextStyle(
     fontFamily: 'HindGuntur',
@@ -182,4 +182,24 @@ const kText22 = TextStyle(
     color: Colors.white,
     fontSize: 18,
     fontStyle: FontStyle.normal
+);
+
+const kText23 = TextStyle(
+    fontFamily: 'HindGuntur',
+    fontWeight: FontWeight.w500,
+    color: Color(0xff535461),
+    fontSize: 18,
+    fontStyle: FontStyle.normal
+);
+
+const kMessageTextFieldDecoration = InputDecoration(
+  contentPadding: EdgeInsets.symmetric(vertical: 10.0, horizontal: 20.0),
+  hintText: 'Leave a message...',
+  border: InputBorder.none,
+);
+
+const kMessageContainerDecoration = BoxDecoration(
+  border: Border(
+    top: BorderSide(color: Colors.lightBlueAccent, width: 2.0),
+  ),
 );

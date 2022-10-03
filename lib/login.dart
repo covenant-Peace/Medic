@@ -2,7 +2,6 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
-import 'package:medic/homesceen.dart';
 import 'package:medic/navigation_bar.dart';
 import 'package:medic/signup.dart';
 
@@ -87,7 +86,8 @@ class _WelcomeState extends State<Welcome> {
               ),
               GestureDetector(
                 onTap: () {
-                  Navigator.pushReplacement(context, MaterialPageRoute(builder: (context)=>Navigation(0)));
+                  Navigator.pushReplacement(context,
+                      MaterialPageRoute(builder: (context) => Navigation(0)));
                 },
                 child: Container(
                   margin: EdgeInsets.only(
@@ -114,8 +114,9 @@ class _WelcomeState extends State<Welcome> {
                     style: kText3,
                   ),
                   GestureDetector(
-                    onTap: (){
-                      Navigator.pushReplacement(context, MaterialPageRoute(builder: (context)=>SignUp()));
+                    onTap: () {
+                      Navigator.pushReplacement(context,
+                          MaterialPageRoute(builder: (context) => SignUp()));
                     },
                     child: Text(
                       'Sign up',

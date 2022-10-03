@@ -2,7 +2,10 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
+import 'package:medic/chat.dart';
 import 'package:medic/constants.dart';
+
+String name = '';
 
 class Physician extends StatefulWidget {
   const Physician({Key? key}) : super(key: key);
@@ -108,200 +111,519 @@ class _PhysicianState extends State<Physician> {
           ),
           Padding(
             padding: EdgeInsets.only(
-                top: getH(198), left: getw(25), right: getw(25)),
+                top: getH(140), left: getw(25), right: getw(25)),
             child: ListView(
               children: [
-                Container(
-                  // width: getw(268),
-                  decoration: BoxDecoration(
-                      border: Border(
-                        top: BorderSide(
-                            color: Color(0xff59b44b),
-                            width: 1,
-                            style: BorderStyle.solid),
-                        bottom: BorderSide(
-                            color: Color(0xff59b44b),
-                            width: 1,
-                            style: BorderStyle.solid),
-                        left: BorderSide(
-                            color: Color(0xff59b44b),
-                            width: 1,
-                            style: BorderStyle.solid),
-                        right: BorderSide(
-                            color: Color(0xff59b44b),
-                            width: 1,
-                            style: BorderStyle.solid),
-                      ),
-                      color: Color(0xffdefbd9),
-                      borderRadius: BorderRadius.circular(5)),
-                  padding: EdgeInsets.all(5),
-                  child: Column(
-                    mainAxisAlignment: MainAxisAlignment.start,
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Row(
-                        mainAxisAlignment: MainAxisAlignment.start,
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          Text(
-                            '●  ',
-                            style: TextStyle(color: Color(0xff59b44b)),
-                          ),
-                          Container(
-                            height: getH(38),
-                            width: getw(38),
-                            decoration: BoxDecoration(
-                              color: Color(0xffc0e8f9),
-                              borderRadius: BorderRadius.circular(5),
-                              border: Border(
-                                top: BorderSide(
-                                    color: Color(0xff3376b5),
-                                    width: 1,
-                                    style: BorderStyle.solid),
-                                bottom: BorderSide(
-                                    color: Color(0xff3376b5),
-                                    width: 1,
-                                    style: BorderStyle.solid),
-                                left: BorderSide(
-                                    color: Color(0xff3376b5),
-                                    width: 1,
-                                    style: BorderStyle.solid),
-                                right: BorderSide(
-                                    color: Color(0xff3376b5),
-                                    width: 1,
-                                    style: BorderStyle.solid),
-                              ),
-                            ),
-                            child: SvgPicture.asset('images/pipa.svg'),
-                          ),
-                          SizedBox(
-                            width: getw(5),
-                          ),
-                          Column(
-                            mainAxisAlignment: MainAxisAlignment.start,
-                            children: [
-                              Text(
-                                'Dr. Amsat',
-                                style: kText7,
-                              ),
-                              Text(
-                                'Tooth Dentist',
-                                style: kText11,
-                              )
-                            ],
-                          ),
-                        ],
-                      ),
-                      Padding(
-                        padding: EdgeInsets.only(left: getw(18)),
-                        child: Text(
-                          'Location: Lagos MainLand.',
-                          style: kText11,
+                GestureDetector(
+                  onTap: (){
+                    name = 'Dr. Amsat';
+                    Navigator.push(context, MaterialPageRoute(builder: (context)=>Chat()));
+
+                  },
+                  child: Container(
+                    // width: getw(268),
+                    decoration: BoxDecoration(
+                        border: Border(
+                          top: BorderSide(
+                              color: Color(0xff59b44b),
+                              width: 1,
+                              style: BorderStyle.solid),
+                          bottom: BorderSide(
+                              color: Color(0xff59b44b),
+                              width: 1,
+                              style: BorderStyle.solid),
+                          left: BorderSide(
+                              color: Color(0xff59b44b),
+                              width: 1,
+                              style: BorderStyle.solid),
+                          right: BorderSide(
+                              color: Color(0xff59b44b),
+                              width: 1,
+                              style: BorderStyle.solid),
                         ),
-                      )
-                    ],
+                        color: Color(0xffdefbd9),
+                        borderRadius: BorderRadius.circular(5)),
+                    padding: EdgeInsets.all(5),
+                    child: Column(
+                      mainAxisAlignment: MainAxisAlignment.start,
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Row(
+                          mainAxisAlignment: MainAxisAlignment.start,
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Text(
+                              '●  ',
+                              style: TextStyle(color: Color(0xff59b44b)),
+                            ),
+                            Container(
+                              height: getH(38),
+                              width: getw(38),
+                              decoration: BoxDecoration(
+                                color: Color(0xffc0e8f9),
+                                borderRadius: BorderRadius.circular(5),
+                                border: Border(
+                                  top: BorderSide(
+                                      color: Color(0xff3376b5),
+                                      width: 1,
+                                      style: BorderStyle.solid),
+                                  bottom: BorderSide(
+                                      color: Color(0xff3376b5),
+                                      width: 1,
+                                      style: BorderStyle.solid),
+                                  left: BorderSide(
+                                      color: Color(0xff3376b5),
+                                      width: 1,
+                                      style: BorderStyle.solid),
+                                  right: BorderSide(
+                                      color: Color(0xff3376b5),
+                                      width: 1,
+                                      style: BorderStyle.solid),
+                                ),
+                              ),
+                              child: SvgPicture.asset('images/pipa.svg'),
+                            ),
+                            SizedBox(
+                              width: getw(5),
+                            ),
+                            Column(
+                              mainAxisAlignment: MainAxisAlignment.start,
+                              children: [
+                                Text(
+                                  'Dr. Amsat',
+                                  style: kText7,
+                                ),
+                                Text(
+                                  'Tooth Dentist',
+                                  style: kText11,
+                                )
+                              ],
+                            ),
+                          ],
+                        ),
+                        Padding(
+                          padding: EdgeInsets.only(left: getw(18)),
+                          child: Text(
+                            'Location: Lagos MainLand.',
+                            style: kText11,
+                          ),
+                        )
+                      ],
+                    ),
                   ),
                 ),
                 SizedBox(
                   height: getH(22),
                 ),
-                Container(
-                  // width: getw(268),
-                  decoration: BoxDecoration(
-                      border: Border(
-                        top: BorderSide(
-                            color: Color(0xff3376b5),
-                            width: 1,
-                            style: BorderStyle.solid),
-                        bottom: BorderSide(
-                            color: Color(0xff3376b5),
-                            width: 1,
-                            style: BorderStyle.solid),
-                        left: BorderSide(
-                            color: Color(0xff3376b5),
-                            width: 1,
-                            style: BorderStyle.solid),
-                        right: BorderSide(
-                            color: Color(0xff3376b5),
-                            width: 1,
-                            style: BorderStyle.solid),
-                      ),
-                      color: Color(0xffc0e8f9),
-                      borderRadius: BorderRadius.circular(5)),
-                  padding: EdgeInsets.all(5),
-                  child: Column(
-                    mainAxisAlignment: MainAxisAlignment.start,
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Row(
-                        mainAxisAlignment: MainAxisAlignment.start,
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          Text(
-                            '●  ',
-                            style: TextStyle(color: Color(0xff392cfe)),
-                          ),
-                          Container(
-                            height: getH(38),
-                            width: getw(38),
-                            decoration: BoxDecoration(
-                              color: Color(0xffc0e8f9),
-                              borderRadius: BorderRadius.circular(5),
-                              border: Border(
-                                top: BorderSide(
-                                    color: Color(0xff3376b5),
-                                    width: 1,
-                                    style: BorderStyle.solid),
-                                bottom: BorderSide(
-                                    color: Color(0xff3376b5),
-                                    width: 1,
-                                    style: BorderStyle.solid),
-                                left: BorderSide(
-                                    color: Color(0xff3376b5),
-                                    width: 1,
-                                    style: BorderStyle.solid),
-                                right: BorderSide(
-                                    color: Color(0xff3376b5),
-                                    width: 1,
-                                    style: BorderStyle.solid),
-                              ),
-                            ),
-                            child: SvgPicture.asset('images/pipa.svg'),
-                          ),
-                          SizedBox(
-                            width: getw(5),
-                          ),
-                          Column(
-                            mainAxisAlignment: MainAxisAlignment.start,
-                            children: [
-                              Text(
-                                'Dr. Muktai',
-                                style: kText7,
-                              ),
-                              Text(
-                                'Tooth Dentist',
-                                style: kText11,
-                              )
-                            ],
-                          ),
-                        ],
-                      ),
-                      Padding(
-                        padding: EdgeInsets.only(left: getw(18)),
-                        child: Text(
-                          'Location: Lagos MainLand.',
-                          style: kText11,
+                GestureDetector(
+                  onTap: (){
+                    name = 'Dr. Muktai';
+                    Navigator.push(context, MaterialPageRoute(builder: (context)=>Chat()));
+                  },
+                  child: Container(
+                    // width: getw(268),
+                    decoration: BoxDecoration(
+                        border: Border(
+                          top: BorderSide(
+                              color: Color(0xff3376b5),
+                              width: 1,
+                              style: BorderStyle.solid),
+                          bottom: BorderSide(
+                              color: Color(0xff3376b5),
+                              width: 1,
+                              style: BorderStyle.solid),
+                          left: BorderSide(
+                              color: Color(0xff3376b5),
+                              width: 1,
+                              style: BorderStyle.solid),
+                          right: BorderSide(
+                              color: Color(0xff3376b5),
+                              width: 1,
+                              style: BorderStyle.solid),
                         ),
-                      )
-                    ],
+                        color: Color(0xffc0e8f9),
+                        borderRadius: BorderRadius.circular(5)),
+                    padding: EdgeInsets.all(5),
+                    child: Column(
+                      mainAxisAlignment: MainAxisAlignment.start,
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Row(
+                          mainAxisAlignment: MainAxisAlignment.start,
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Text(
+                              '●  ',
+                              style: TextStyle(color: Color(0xff392cfe)),
+                            ),
+                            Container(
+                              height: getH(38),
+                              width: getw(38),
+                              decoration: BoxDecoration(
+                                color: Color(0xffc0e8f9),
+                                borderRadius: BorderRadius.circular(5),
+                                border: Border(
+                                  top: BorderSide(
+                                      color: Color(0xff3376b5),
+                                      width: 1,
+                                      style: BorderStyle.solid),
+                                  bottom: BorderSide(
+                                      color: Color(0xff3376b5),
+                                      width: 1,
+                                      style: BorderStyle.solid),
+                                  left: BorderSide(
+                                      color: Color(0xff3376b5),
+                                      width: 1,
+                                      style: BorderStyle.solid),
+                                  right: BorderSide(
+                                      color: Color(0xff3376b5),
+                                      width: 1,
+                                      style: BorderStyle.solid),
+                                ),
+                              ),
+                              child: SvgPicture.asset('images/pipa.svg'),
+                            ),
+                            SizedBox(
+                              width: getw(5),
+                            ),
+                            Column(
+                              mainAxisAlignment: MainAxisAlignment.start,
+                              children: [
+                                Text(
+                                  'Dr. Muktai',
+                                  style: kText7,
+                                ),
+                                Text(
+                                  'Tooth Dentist',
+                                  style: kText11,
+                                )
+                              ],
+                            ),
+                          ],
+                        ),
+                        Padding(
+                          padding: EdgeInsets.only(left: getw(18)),
+                          child: Text(
+                            'Location: Lagos MainLand.',
+                            style: kText11,
+                          ),
+                        )
+                      ],
+                    ),
                   ),
                 ),
                 SizedBox(
                   height: getH(22),
                 ),
+                GestureDetector(
+                  onTap: (){
+                    name='Dr. Temi';
+                    Navigator.push(context, MaterialPageRoute(builder: (context)=>Chat()));
+
+                  },
+                  child: Container(
+                    // width: getw(268),
+                    decoration: BoxDecoration(
+                        border: Border(
+                          top: BorderSide(
+                              color: Color(0xff3376b5),
+                              width: 1,
+                              style: BorderStyle.solid),
+                          bottom: BorderSide(
+                              color: Color(0xff3376b5),
+                              width: 1,
+                              style: BorderStyle.solid),
+                          left: BorderSide(
+                              color: Color(0xff3376b5),
+                              width: 1,
+                              style: BorderStyle.solid),
+                          right: BorderSide(
+                              color: Color(0xff3376b5),
+                              width: 1,
+                              style: BorderStyle.solid),
+                        ),
+                        color: Color(0xffc0e8f9),
+                        borderRadius: BorderRadius.circular(5)),
+                    padding: EdgeInsets.all(5),
+                    child: Column(
+                      mainAxisAlignment: MainAxisAlignment.start,
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Row(
+                          mainAxisAlignment: MainAxisAlignment.start,
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Text(
+                              '●  ',
+                              style: TextStyle(color: Color(0xff392cfe)),
+                            ),
+                            Container(
+                              height: getH(38),
+                              width: getw(38),
+                              decoration: BoxDecoration(
+                                color: Color(0xffc0e8f9),
+                                borderRadius: BorderRadius.circular(5),
+                                border: Border(
+                                  top: BorderSide(
+                                      color: Color(0xff3376b5),
+                                      width: 1,
+                                      style: BorderStyle.solid),
+                                  bottom: BorderSide(
+                                      color: Color(0xff3376b5),
+                                      width: 1,
+                                      style: BorderStyle.solid),
+                                  left: BorderSide(
+                                      color: Color(0xff3376b5),
+                                      width: 1,
+                                      style: BorderStyle.solid),
+                                  right: BorderSide(
+                                      color: Color(0xff3376b5),
+                                      width: 1,
+                                      style: BorderStyle.solid),
+                                ),
+                              ),
+                              child: SvgPicture.asset('images/pipa.svg'),
+                            ),
+                            SizedBox(
+                              width: getw(5),
+                            ),
+                            Column(
+                              mainAxisAlignment: MainAxisAlignment.start,
+                              children: [
+                                Text(
+                                  'Dr. Temi',
+                                  style: kText7,
+                                ),
+                                Text(
+                                  'Surgeon',
+                                  style: kText11,
+                                )
+                              ],
+                            ),
+                          ],
+                        ),
+                        Padding(
+                          padding: EdgeInsets.only(left: getw(18)),
+                          child: Text(
+                            'Location: Lagos MainLand.',
+                            style: kText11,
+                          ),
+                        )
+                      ],
+                    ),
+                  ),
+                ),
+                SizedBox(
+                  height: getH(22),
+                ),
+                GestureDetector(
+                  onTap: (){
+                    name = 'Dr. Jamiu';
+                    Navigator.push(context, MaterialPageRoute(builder: (context)=>Chat()));
+                  },
+                  child: Container(
+                    // width: getw(268),
+                    decoration: BoxDecoration(
+                        border: Border(
+                          top: BorderSide(
+                              color: Color(0xff3376b5),
+                              width: 1,
+                              style: BorderStyle.solid),
+                          bottom: BorderSide(
+                              color: Color(0xff3376b5),
+                              width: 1,
+                              style: BorderStyle.solid),
+                          left: BorderSide(
+                              color: Color(0xff3376b5),
+                              width: 1,
+                              style: BorderStyle.solid),
+                          right: BorderSide(
+                              color: Color(0xff3376b5),
+                              width: 1,
+                              style: BorderStyle.solid),
+                        ),
+                        color: Color(0xffc0e8f9),
+                        borderRadius: BorderRadius.circular(5)),
+                    padding: EdgeInsets.all(5),
+                    child: Column(
+                      mainAxisAlignment: MainAxisAlignment.start,
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Row(
+                          mainAxisAlignment: MainAxisAlignment.start,
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Text(
+                              '●  ',
+                              style: TextStyle(color: Color(0xff392cfe)),
+                            ),
+                            Container(
+                              height: getH(38),
+                              width: getw(38),
+                              decoration: BoxDecoration(
+                                color: Color(0xffc0e8f9),
+                                borderRadius: BorderRadius.circular(5),
+                                border: Border(
+                                  top: BorderSide(
+                                      color: Color(0xff3376b5),
+                                      width: 1,
+                                      style: BorderStyle.solid),
+                                  bottom: BorderSide(
+                                      color: Color(0xff3376b5),
+                                      width: 1,
+                                      style: BorderStyle.solid),
+                                  left: BorderSide(
+                                      color: Color(0xff3376b5),
+                                      width: 1,
+                                      style: BorderStyle.solid),
+                                  right: BorderSide(
+                                      color: Color(0xff3376b5),
+                                      width: 1,
+                                      style: BorderStyle.solid),
+                                ),
+                              ),
+                              child: SvgPicture.asset('images/pipa.svg'),
+                            ),
+                            SizedBox(
+                              width: getw(5),
+                            ),
+                            Column(
+                              mainAxisAlignment: MainAxisAlignment.start,
+                              children: [
+                                Text(
+                                  'Dr. Jamiu',
+                                  style: kText7,
+                                ),
+                                Text(
+                                  'Wellness Expert',
+                                  style: kText11,
+                                )
+                              ],
+                            ),
+                          ],
+                        ),
+                        Padding(
+                          padding: EdgeInsets.only(left: getw(18)),
+                          child: Text(
+                            'Location: Lagos MainLand.',
+                            style: kText11,
+                          ),
+                        )
+                      ],
+                    ),
+                  ),
+                ),
+                SizedBox(
+                  height: getH(22),
+                ),
+                GestureDetector(
+                  onTap: (){
+                    name= 'Dr. Aminah';
+                    Navigator.push(context, MaterialPageRoute(builder: (context)=>Chat()));
+                  },
+                  child: Container(
+                    // width: getw(268),
+                    decoration: BoxDecoration(
+                        border: Border(
+                          top: BorderSide(
+                              color: Color(0xff3376b5),
+                              width: 1,
+                              style: BorderStyle.solid),
+                          bottom: BorderSide(
+                              color: Color(0xff3376b5),
+                              width: 1,
+                              style: BorderStyle.solid),
+                          left: BorderSide(
+                              color: Color(0xff3376b5),
+                              width: 1,
+                              style: BorderStyle.solid),
+                          right: BorderSide(
+                              color: Color(0xff3376b5),
+                              width: 1,
+                              style: BorderStyle.solid),
+                        ),
+                        color: Color(0xffc0e8f9),
+                        borderRadius: BorderRadius.circular(5)),
+                    padding: EdgeInsets.all(5),
+                    child: Column(
+                      mainAxisAlignment: MainAxisAlignment.start,
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Row(
+                          mainAxisAlignment: MainAxisAlignment.start,
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Text(
+                              '●  ',
+                              style: TextStyle(color: Color(0xff392cfe)),
+                            ),
+                            Container(
+                              height: getH(38),
+                              width: getw(38),
+                              decoration: BoxDecoration(
+                                color: Color(0xffc0e8f9),
+                                borderRadius: BorderRadius.circular(5),
+                                border: Border(
+                                  top: BorderSide(
+                                      color: Color(0xff3376b5),
+                                      width: 1,
+                                      style: BorderStyle.solid),
+                                  bottom: BorderSide(
+                                      color: Color(0xff3376b5),
+                                      width: 1,
+                                      style: BorderStyle.solid),
+                                  left: BorderSide(
+                                      color: Color(0xff3376b5),
+                                      width: 1,
+                                      style: BorderStyle.solid),
+                                  right: BorderSide(
+                                      color: Color(0xff3376b5),
+                                      width: 1,
+                                      style: BorderStyle.solid),
+                                ),
+                              ),
+                              child: SvgPicture.asset('images/pipa.svg'),
+                            ),
+                            SizedBox(
+                              width: getw(5),
+                            ),
+                            Column(
+                              mainAxisAlignment: MainAxisAlignment.start,
+                              children: [
+                                Text(
+                                  'Dr. Aminah',
+                                  style: kText7,
+                                ),
+                                Text(
+                                  'Psycologist',
+                                  style: kText11,
+                                )
+                              ],
+                            ),
+                          ],
+                        ),
+                        Padding(
+                          padding: EdgeInsets.only(left: getw(18)),
+                          child: Text(
+                            'Location: Lagos Ikeja.',
+                            style: kText11,
+                          ),
+                        )
+                      ],
+                    ),
+                  ),
+                ),
+                SizedBox(
+                  height: getH(16),
+                ),
+                Text(
+                  'Didn’t see the right person to contact? see hospitals near me here',
+                  style: kText14,
+                  textAlign: TextAlign.center,
+                )
               ],
             ),
-          )
+          ),
         ],
       ),
     );
