@@ -148,7 +148,6 @@ class _ChatState extends State<Chat> {
                   child: ListView(
                     reverse: false,
                     // padding:
-                        // EdgeInsets.symmetric(horizontal: 10.0, vertical: 20.0),
                     children: messageBubbles,
                   ),
                 ),
