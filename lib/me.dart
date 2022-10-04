@@ -47,10 +47,8 @@ class Me extends StatelessWidget {
             children: [
               GestureDetector(
                 onTap: () {
-                  Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                          builder: (context) => Profile()));
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => Profile()));
                 },
                 child: Container(
                   decoration: BoxDecoration(
@@ -115,7 +113,9 @@ class Me extends StatelessWidget {
                   ),
                 ),
               ),
-              SizedBox(height: getH(16),),
+              SizedBox(
+                height: getH(16),
+              ),
               Container(
                 decoration: BoxDecoration(
                     color: Colors.white,
@@ -178,7 +178,9 @@ class Me extends StatelessWidget {
                   ],
                 ),
               ),
-              SizedBox(height: getH(16),),
+              SizedBox(
+                height: getH(16),
+              ),
               Container(
                 decoration: BoxDecoration(
                     color: Colors.white,
@@ -241,7 +243,9 @@ class Me extends StatelessWidget {
                   ],
                 ),
               ),
-              SizedBox(height: getH(16),),
+              SizedBox(
+                height: getH(16),
+              ),
               Container(
                 decoration: BoxDecoration(
                     color: Colors.white,
@@ -304,7 +308,9 @@ class Me extends StatelessWidget {
                   ],
                 ),
               ),
-              SizedBox(height: getH(16),),
+              SizedBox(
+                height: getH(16),
+              ),
               Container(
                 decoration: BoxDecoration(
                     color: Colors.white,
@@ -367,7 +373,9 @@ class Me extends StatelessWidget {
                   ],
                 ),
               ),
-              SizedBox(height: getH(16),),
+              SizedBox(
+                height: getH(16),
+              ),
               Container(
                 decoration: BoxDecoration(
                     color: Colors.white,
@@ -430,7 +438,9 @@ class Me extends StatelessWidget {
                   ],
                 ),
               ),
-              SizedBox(height: getH(16),),
+              SizedBox(
+                height: getH(16),
+              ),
               Container(
                 decoration: BoxDecoration(
                     color: Colors.white,

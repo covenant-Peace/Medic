@@ -115,10 +115,10 @@ class _PhysicianState extends State<Physician> {
             child: ListView(
               children: [
                 GestureDetector(
-                  onTap: (){
+                  onTap: () {
                     name = 'Dr. Amsat';
-                    Navigator.push(context, MaterialPageRoute(builder: (context)=>Chat()));
-
+                    Navigator.push(context,
+                        MaterialPageRoute(builder: (context) => Chat()));
                   },
                   child: Container(
                     // width: getw(268),
@@ -216,9 +216,10 @@ class _PhysicianState extends State<Physician> {
                   height: getH(22),
                 ),
                 GestureDetector(
-                  onTap: (){
+                  onTap: () {
                     name = 'Dr. Muktai';
-                    Navigator.push(context, MaterialPageRoute(builder: (context)=>Chat()));
+                    Navigator.push(context,
+                        MaterialPageRoute(builder: (context) => Chat()));
                   },
                   child: Container(
                     // width: getw(268),
@@ -316,10 +317,10 @@ class _PhysicianState extends State<Physician> {
                   height: getH(22),
                 ),
                 GestureDetector(
-                  onTap: (){
-                    name='Dr. Temi';
-                    Navigator.push(context, MaterialPageRoute(builder: (context)=>Chat()));
-
+                  onTap: () {
+                    name = 'Dr. Temi';
+                    Navigator.push(context,
+                        MaterialPageRoute(builder: (context) => Chat()));
                   },
                   child: Container(
                     // width: getw(268),
@@ -417,9 +418,10 @@ class _PhysicianState extends State<Physician> {
                   height: getH(22),
                 ),
                 GestureDetector(
-                  onTap: (){
+                  onTap: () {
                     name = 'Dr. Jamiu';
-                    Navigator.push(context, MaterialPageRoute(builder: (context)=>Chat()));
+                    Navigator.push(context,
+                        MaterialPageRoute(builder: (context) => Chat()));
                   },
                   child: Container(
                     // width: getw(268),
@@ -517,9 +519,10 @@ class _PhysicianState extends State<Physician> {
                   height: getH(22),
                 ),
                 GestureDetector(
-                  onTap: (){
-                    name= 'Dr. Aminah';
-                    Navigator.push(context, MaterialPageRoute(builder: (context)=>Chat()));
+                  onTap: () {
+                    name = 'Dr. Aminah';
+                    Navigator.push(context,
+                        MaterialPageRoute(builder: (context) => Chat()));
                   },
                   child: Container(
                     // width: getw(268),
