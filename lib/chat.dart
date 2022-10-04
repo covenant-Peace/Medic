@@ -147,7 +147,6 @@ class _ChatState extends State<Chat> {
                 Expanded(
                   child: ListView(
                     reverse: false,
-                    // padding:
                     children: messageBubbles,
                   ),
                 ),
