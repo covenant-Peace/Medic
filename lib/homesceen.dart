@@ -92,8 +92,11 @@ class _HomeScreenState extends State<HomeScreen> {
                     Column(
                       children: [
                         GestureDetector(
-                          onTap: (){
-                            Navigator.push(context, MaterialPageRoute(builder:(context)=>Physician()));
+                          onTap: () {
+                            Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) => Physician()));
                           },
                           child: Container(
                             width: getw(75),
